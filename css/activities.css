@@ -1,0 +1,95 @@
+/*   Activités   */
+.activities__section {
+    /* width:                      1337px; */
+    margin-top:                     40px;
+    
+}
+
+.activities__section-h2{
+    font-size:                  1.375em;/*22 / 16*/
+    font-weight:                700;
+    
+}
+.activities__cards {
+    display:                    flex;
+    gap:                        43px;
+    margin-top:                 20px;
+    padding:                    0px 3px 0px 1px;
+}
+
+.activities__cards-a {
+    width:                      302px;
+    border-radius:              20px;
+    box-shadow:                 0px 3px 14px 0px #d3d3d3;
+    transition:                 all ease-out 0.1s;
+}
+.activities__cards-a:hover {
+    box-shadow:                 0px 3px 14px 0px #787777;
+    transform:                  translate(0px, -4px);
+}
+.activities__cards-img {
+    width:                      100%;
+    height:                     390px;
+    border-radius:              20px 20px 0px 0px;
+    object-fit:                 cover;
+}
+.activities__cards-h3 {
+    font-size:                  1em;
+    font-weight:                700;
+    padding:                    0 10px 10px 15px;
+    
+} 
+
+
+/* Responsive Mobile 768px */
+@media screen and (max-width: 768px){
+    .activities__section{
+        padding:                0 40px 10px 40px;
+        margin-top:             60px;
+        width:                  100%;
+       
+    }
+
+    .activities__section-h2{
+        padding:                40px 0 30px 0;
+        margin:                 0;
+    }
+
+    .activities__cards-article {
+        height:                  100%;
+    }
+
+   
+    .activities__cards{
+        flex-direction:         column;
+        padding-bottom:         30px;
+        
+    }
+
+    .activities__cards-a{
+        width:                  100%;
+        min-width:              0px;
+    }
+
+    .activities__cards-img{
+        height:                 114px;
+    } 
+}
+
+/* Responsive Tablette 992px */
+@media screen and (min-width: 769px) and (max-width: 992px){
+    .activities__section{
+        width:                  100%;
+        
+    }
+    .activities__cards-img{
+        width:                  100%;
+        height:                 200px;
+    }
+
+    .activities__cards-article{
+        height:                 100%;
+    }
+}
+
+

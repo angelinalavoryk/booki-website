@@ -1,0 +1,252 @@
+/*   Hébergements + Populaires  */
+/* Générales */
+.hosting__popular-section {
+    display:                    flex;
+    max-width:                  1340px;
+    margin-top:                 37px;
+    gap:                        2.95%;
+}
+.hosting__popular--title-h2 {
+    font-size:                  1.375em;/*22 / 16*/
+    font-weight:                700;
+} 
+
+.hosting__popular--subtitle-h3{
+    font-size:                  1em;
+    font-weight:                700;
+}
+                
+.fa-star {
+    font-size:                  12px;
+    padding-bottom:             10px;
+}
+.blue-star {
+    color:                      var(--blue-color);
+}
+.gray-star {
+    color:                      var(--light-gray-color);
+}
+.bold__text-euros {
+    font-weight:                500;
+}
+.hosting__popular__cards-article {
+    background:                 var(--white-color);
+    padding:                    5px 5px 0px 5px;
+    border-radius:              20px;
+    box-shadow:                 0px 3px 14px 0px var(--light-gray-color);
+    transition:                 all ease-out 0.1s;
+}
+.hosting__popular__cards-article:hover {
+    transform:                  translate(0px, -4px);
+}
+
+              
+            /*   SECTION HEBERGEMENTS   */
+.hosting__section {
+    background:                 var(--light-gray-color);
+    width:                      880px;
+    padding:                    0px 40px 0px 40px;
+    border-radius:              20px;
+}
+/* Title */
+.hosting__title-h2{
+    padding-top: 10px;
+}
+/* Cards */
+.hosting__cards {
+    display:                    flex;
+    justify-content:            center;
+    flex-wrap:                  wrap;
+    gap:                        31px;
+}  
+.hosting__cards-link {
+    flex:                       1 0 30%;
+    width:                      246px;
+    border-radius:              20px;
+}              
+.hosting__img {
+    width:                      100%;
+    height:                     114px;
+    border-radius:              15px 15px 0px 0px;
+    object-fit:                 cover;
+}
+.hosting__subtitle-h3 {
+    margin-top:                 6px;
+}
+.hosting__popular--text-p {
+    font-size:                  0.875em;/*14 / 16*/
+    font-weight:                400;
+} 
+.text__cards-hebergements {
+    margin:                     5px 0px 0px 4.4%;
+}             
+.text__cards-hebergements {
+    margin:                     5px 0px 0px 4.4%;
+}             
+.hosting__note-stars {
+    margin:                     2px 0px 0px 4.2%;
+}              
+.hosting__show__more {
+    font-size:                  1.125em;/*18 / 16*/
+    font-weight:                700;
+    cursor:                     pointer;
+    padding-top:                40px;
+    padding-bottom:             30px;
+}
+           
+            /* SECTION POPULAIRES  */
+.popular__section {
+    background:                 var(--light-gray-color);
+    width:                      420px;
+    padding:                    0px 40px 20px 37px;
+    border-radius:              20px;
+} 
+/* Title */
+.popular__title-container {
+    display:                    flex;
+    align-items:                center;
+    justify-content:            space-between;
+    padding-top:                10px;
+}
+.popular__title-icone{
+    font-size:                  18px;
+    color:                      var(--blue-color);
+} 
+
+/* Cards */
+.popular__cards{
+    display:                    flex;
+    flex-direction:             column;
+    gap:                        33px;    
+}
+.popular__cards-link {
+    border-radius:              20px;
+    
+}
+.popular__cards-article {
+    display:                    flex;
+    height:                     144px;
+}
+.popular__cards-img{
+    width:                      12vh;
+    height:                     134px;
+    border-radius:              15px 0px 0px 15px;
+    object-fit:                 cover;
+}
+
+.popular__text-container{
+    display:                    flex;
+    flex-direction:             column;
+    justify-content:            space-between;
+    padding:                    10px 2px 0 10px;
+}
+
+.popular__subtitle-h3{
+    margin:                     0;
+}
+
+.popular__text-p{
+    margin:                     0;
+}
+
+
+
+
+/* Responsive Mobile 768 */
+@media screen and (max-width: 768px){
+/* Générales */
+.hosting__popular-section{
+    flex-direction:             column-reverse;
+    gap:                        30px;
+}
+
+/* Populars */
+.popular__section{
+   width:                       100%;
+   border-radius:               0;
+   padding:                     0 40px 30px 40px;
+}
+/* Hosting */
+.hosting__section{
+    width:                      100%;
+    background-color:           var(--white-color);
+    padding:                    0 40px 30px 40px;
+}
+.hosting__cards{
+    flex-direction:             column;
+}
+.hosting__cards-link{
+    width:                      100%;
+}
+.hosting__show__more{
+    display:                    none;
+}
+
+
+} 
+
+/* Responsive Tablette 992px */
+@media screen and (min-width: 769px) and (max-width: 992px){
+/* Générales */
+    .hosting__popular-section{
+        flex-direction:         column;
+        gap:                    33px;
+    }
+/* Hosting */
+    .hosting__section{
+        width:                  100%;
+        padding:                0 20px 0 20px;
+    }
+
+    .hosting__show__more{
+        padding-bottom: 20px;
+    }
+/* Populars */
+    .popular__section{
+        width:                  100%;
+        
+        padding:                0 10px 20px 10px;
+    }
+    .popular__title-container{
+        padding: 0;
+    }
+
+    .popular__cards{
+        flex-direction:         row;
+        justify-content:        center;
+        gap:                    10px;
+    }
+    .popular__cards-link{
+        width:                  100%;
+        
+    }
+
+    .popular__cards-img{
+        width:                  9vh;
+        
+    }
+
+    .popular__text-container{
+        padding-right:          5px;
+    }
+
+    .hosting__popular--title-h2{
+        margin:                 0;
+        padding:                20px;
+    }
+} 
+
+@media screen and (min-width: 993px) and (max-width: 1179px){
+    .popular__cards{
+        gap: 65px;
+        padding-top: 20px;
+    }
+
+}
+
+
+
+
+
+
+

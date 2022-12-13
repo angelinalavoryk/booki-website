@@ -1,0 +1,107 @@
+.filtres__section{
+    padding-top:                20px;
+}
+
+.filtres{
+    display:                    flex;
+    align-items:                center;
+    width:                      100%;
+    margin-top:                 30px;
+
+}
+
+.filtre__h2{
+    font-size:                  1.125em; /*18/ 16 */
+    font-weight:                700;
+    padding-right:              30px;
+}
+
+.filtres__bar{
+    display:                    flex;
+    align-items:                center;
+}
+
+.filtre__search-subtitle{
+    font-size:                  1.0625em; /*17 / 16*/
+    font-weight:                700;
+}
+
+.filtre__search{
+    display:                    flex;    
+    align-items:                center;
+    height:                     48px;
+    padding-left:               15px;
+    padding-right:              15px;
+    margin-right:               35px;
+    border:                     2px solid var(--light-gray-color);
+    border-radius:              25px;
+    gap:                        5px 10px;
+    }
+.filtre__search:hover{
+    background:                 var(--light-blue-color);
+    }
+                
+.filtre__search-icon{
+    color:                      var(--blue-color);
+    font-size:                  1.125em; /*18 / 16*/
+} 
+
+.filtre__info {
+    display:                    flex;
+    align-items:                center;
+    margin-top:                 30px;
+}
+                
+.filtre__info-icon{
+    display:                    flex;
+    justify-content:            center;
+    align-items:                center;
+    width:                      24px;
+    height:                     24px;
+    font-size:                  13px;
+    color:                      var(--blue-color);
+    border:                     1px solid var(--light-gray-color);
+    border-radius:              50%;
+}
+                
+.filtre__text-info {
+    padding-left:               11px;
+    font-size:                  1em; /*16 / 16*/
+    font-weight:                400;
+                    
+}
+/* Responsive Mobile 768px */
+@media screen and (max-width: 768px){
+    .filtres{
+        flex-wrap:              wrap;
+        padding-left:           25px;
+    }
+
+    .filtre__info{
+        padding:                0 10px 0 30px;
+    }
+
+    .filtres__bar{
+        flex-wrap: wrap;
+        gap:                    10px;
+        width:                  100%;
+        
+    }
+}
+
+/* Responsive Tablettte 992px */
+@media screen and (min-width: 768px) and (max-width: 992px){
+    .filtres{
+        width:                  100%;
+    }
+    .filtre__search{
+        margin:                 5px;
+    }
+
+    .filtre__h2{
+        padding-right:          5px;
+    }
+}
+
+
+    
